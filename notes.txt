@@ -1,0 +1,6 @@
+The xml tag means that this svg drawing will still run without the html tags.
+This is because XML which stands for Extensible Markup Language is a markup
+language similar to HTML. You maybe wondering why are you using xml to run the
+svg graphic. I'm using XML because SVG language is based on XML.
+
+Source: https://developer.mozilla.org/en-US/docs/XML_introduction
