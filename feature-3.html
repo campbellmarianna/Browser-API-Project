@@ -1,9 +1,9 @@
-<!-- <!doctype html>
+<!doctype html>
 <html>
     <head>
 
     </head>
-    <body> -->
+    <body>
         <!--SVG Drawing-->
         <!-- This svg is running in XML-->
         <?xml version="1.0" standalone="no"?>
@@ -13,10 +13,53 @@
             <title>Example pattern01</title>
 
             <desc>Fill an ellipse using a pattern paint server.</desc>
-            <!--Example what the def tag does-->
+            <!--The <defs> element is used to store graphical objects that will be used at a later time.-->
             <defs>
                 <!--Then explain what the pattern tag does.-->
-                <!--After that example its attributes-->
+                <!--The pattern element defines a graphics object which can be
+                redrawn at repeated x and y-coordinate intervals ("tiled") to
+                cover the area.-->
+                    <!--patternUnits: This attribute contains the definition of an optional
+                        additional transformation from the pattern coordinate
+                        system onto the target coordinate system. The patternUnits
+                        attribute indicates which coordinate system to use for
+                        the geometry properties of the <pattern> element.-->
+                        <!-- x: This attribute determines the x coordinate shift
+                        of the pattern tile. This x attribute defines a x-axis
+                        coordinate in the user coordinate system.-->
+                        <!-- y: This attribute determines the y coordinate shift
+                        of the pattern tile. The y attribute defines a y-axis
+                        coordinate in the user coordinate system.-->
+                        <!--width: This attribute determines the width of the
+                        pattern tile.-->
+                        <!--height: This attribute determines the height of the
+                        pattern tile.-->
+                        <!--viewBox: This attribute defines the bound of the SVG
+                         viewport for the pattern fragment. The viewBox Attribute
+                         defines the position and dimension, in user space, of
+                         an SVG viewport.-->
+                        <!-- The <path> element is the most powerful element in
+                        the SVG library of basic shapes. You can use it to create
+                        lines, curves, arcs and more. Paths create complex shapes
+                        by combining mutliple straight lines or curved lines.-->
+                            <!-- The d attribute defines the shape of the path
+                            element. The d attribute contains a series of commands
+                            and parameters used by those commands. Each of <thead>
+                            commands is instantiated (for example, creating
+                            a class, naming and locating it) by a specific
+                            letter. For instance, let's move to the x and y
+                            coordinates (10, 10). For instance, let's move
+                            to the x and y coordinates (10,10).
+                            The "Move to" command is called with the letter M.
+                            When the parser runs into this letter, it knows you
+                            want to move to a point.-->
+                            <!-- The fill atrribute sets the color inside the object-->
+                            <!-- The stroke sets the color of the line drawn
+                            around the object. You can also specify the opacity
+                            of either the fill or stroke separately in SVG. These
+                            are controlled by the fill-opacity and stroke-opacity
+                            attributes. -->
+
                 <pattern id="TrianglePattern"
                     patternUnits="userSpaceOnUse"
                     x="0" y="0" width="50" height="50"
@@ -26,13 +69,29 @@
                         stroke="blue" />
                 </pattern>
             </defs>
-
+            <!-- The <ellipse> element is an SVG basic shape, used to create
+            ellipses based on a center coordinate, and both their x and y radius.-->
             <!-- The ellipse is filled using a triangle pattern paint server -->
+                <!--stroke-width: The stroke-width attribute is a presentation
+                attribute defining the width of the stroke to be applied to the
+                shape. -->
+                <!--cx: The cx attribute define the x-axis coordinate of a center
+                point. Three elements are using this attribute: <circle>, <ellipse>
+                and <radialGradient>.-->
+                <!--cy: The cy attribute define the y-axis coordinate of a
+                center point. Like attribute cx, three elements are using this
+                attribute: <circle>, <ellipse>, and <radialGradient>.-->
+                <!-- rx: The rx attribute defines a radius on the x-axis. Two
+                elements are using thi attribute: <ellipse>, and <rect>. -->
+                <!-- ry: The ry attribute defines a radius on the y-axis. -->
             <ellipse fill="url(#TrianglePattern)"
                     stroke="black"
                     stroke-width="2"
                     cx="150" cy="100" rx="125" ry="75" />
         </svg>
         <!--Example Source: https://svgwg.org/svg2-draft/pservers.html#ExamplePattern01-->
-    <!-- </body>
-</html> -->
+    </body>
+</html>
+<!-- The SVG Pattern element can used for data visualization software, partcularly
+graphs and diagrams. For instance, the Github daily commit tracker on a users profile
+uses the SVG pattern element.-->

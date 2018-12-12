@@ -4,3 +4,21 @@ language similar to HTML. You maybe wondering why are you using xml to run the
 svg graphic. I'm using XML because SVG language is based on XML.
 
 Source: https://developer.mozilla.org/en-US/docs/XML_introduction
+
+<defs> https://developer.mozilla.org/en-US/docs/Web/SVG/Element/defs
+    Attributes:
+    patternUnits https://developer.mozilla.org/en-US/docs/Web/SVG/Attribute/patternUnits
+    viewBox https://developer.mozilla.org/en-US/docs/Web/SVG/Attribute/viewBox
+    x https://developer.mozilla.org/en-US/docs/Web/SVG/Attribute/x
+    y https://developer.mozilla.org/en-US/docs/Web/SVG/Attribute/y
+
+    <path> https://developer.mozilla.org/en-US/docs/Web/SVG/Tutorial/Paths
+        fill https://developer.mozilla.org/en-US/docs/Web/SVG/Tutorial/Fills_and_Strokes
+        stroke https://developer.mozilla.org/en-US/docs/Web/SVG/Tutorial/Fills_and_Strokes
+
+<ellipse> https://developer.mozilla.org/en-US/docs/Web/SVG/Element/ellipse
+    stroke-width https://developer.mozilla.org/en-US/docs/Web/SVG/Attribute/stroke-width
+    cx https://developer.mozilla.org/en-US/docs/Web/SVG/Attribute/cx
+    cy https://developer.mozilla.org/en-US/docs/Web/SVG/Attribute/cy
+    rx https://developer.mozilla.org/en-US/docs/Web/SVG/Attribute/rx
+    ry https://developer.mozilla.org/en-US/docs/Web/SVG/Attribute/ry
