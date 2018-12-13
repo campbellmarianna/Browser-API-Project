@@ -3,20 +3,73 @@
 <head>
     <title>Browser API Project</title>
     <link href="https://fonts.googleapis.com/css?family=Ropa+Sans|Sirin+Stencil" rel="stylesheet">
+    <style>
+    body {
+        background-color: #6c5ce7;
+    }
+    .feature-1 {
+        width: 300px;
+        height: 200px;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        background-color: transparent;
+    }
 
+    svg {
+        /* background-color: white; */
+    }
+
+    .display-container {
+        background-color: white;
+        width: 100%;
+        height: 200px;
+
+    }
+    </style>
 </head>
 <body>
     <h1 style="font-family: 'Sirin Stencil', cursive; font-size: 10rem; text-align: center; margin: 0;">Pattern</h1>
     <h5 style="font-family: 'Ropa Sans', sans-serif; text-align: center; color: #d63031"> SVG Pattern Element</h5>
     <!-- Description about SVG-->
-    <p>SVG stands for Scaliable Vector Graphic. SVG can be used for web development
-        and data visualization. SVG is mainly used to create vector based images.
-        SVG draws lines at different coordinates on the screen to create the image.
-        A powerful SVG element is pattern.</p>
+    <p>Scalable Vector Graphic (SVGs) can be used for web development and data
+        visualization. It is mainly used to create vector based images. SVG draws
+        lines at different coordinates on the screen to create the image.
+        A powerful SVG element is pattern!</p>
 
     <!--Feature 1 description-->
+    <p>The pattern element defines a graphics object which can be redrawn at
+        repeatedx and y coordinate intervals ("tiled") to cover an area.</p>
+    <!--Image of Tested Feature-->
+    <div class="display-container">
+        <div class="feature-1">
+            <svg xmlns="http://www.w3.org/2000/svg"
+                 version="1.1"
+                 viewBox="0 0 300 200" >
 
+              <title>Example pattern01</title>
+              <desc>Fill an ellipse using a pattern paint server.</desc>
 
+              <defs>
+                <pattern id="TrianglePattern"
+            	     patternUnits="userSpaceOnUse"
+                         x="0" y="0" width="50" height="50"
+                         viewBox="0 0 10 10" >
+                  <path d="M 0 0 L 7 0 L 3.5 7 z"
+            	    fill="plum"
+            	    stroke="blue" />
+                </pattern>
+              </defs>
+
+              <!-- The ellipse is filled using a triangle pattern paint server -->
+              <ellipse fill="url(#TrianglePattern)"
+            	   stroke="black"
+            	   stroke-width="2"
+                       cx="150" cy="100" rx="125" ry="75" />
+            </svg>
+        </div>
+    </div>
+    <!--Code Snippet-->
 
 
 </body>
