@@ -6,7 +6,6 @@ The pattern element defines a graphics object which can be redrawn at repeated x
 
 ![SVG Pattern Element Feature 1](feature-1.png "Feature 1 Test")
 
-`
 <svg xmlns="http://www.w3.org/2000/svg"
      version="1.1"
      viewBox="0 0 300 200" >
@@ -31,7 +30,7 @@ The pattern element defines a graphics object which can be redrawn at repeated x
        stroke-width="2"
            cx="150" cy="100" rx="125" ry="75" />
 </svg>
-`
+
 
 ----
 ##### Attributes
