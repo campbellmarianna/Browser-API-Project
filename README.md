@@ -33,7 +33,7 @@ The pattern element defines a graphics object which can be redrawn at repeated x
 
 
 ----
-##### Attributes
+#### Attributes
 
 
 #### Uses
@@ -41,6 +41,26 @@ The SVG Pattern element can used for data visualization software, partcularly
 graphs and diagrams. For instance, the Github daily commit tracker on a users profile
 uses the SVG pattern element.
 
-## Other Resources
+## Browser Support
+The SVG pattern element has basic support from most browsers.
+- Chrome
+- Edge
+- Firefox
+- IE
+- Opera
+- Safari
+- WebView Android
+- Chrome Android
+- Edge Mobile
+- Firefox Android
+- Opera Android
+- Safari iOS
+
+However valuable pattern element attributes such `patternUnits`, `patternContentUnits`, and `patternTransform` are only supported by Safari.
+
+## Documentation
 - https://developer.mozilla.org/en-US/docs/Web/SVG/Element/pattern
+
+## Other Resources
+- http://vanseodesign.com/web-design/svg-basics/
 - https://www.sitepoint.com/6-incredible-svg-pattern-generators/
