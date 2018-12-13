@@ -1,1 +1,1 @@
-![SVG Pattern Element](header.png "SVG Pattern Element")
+![SVG Pattern Element](projectHeader.png "SVG Pattern Element")
