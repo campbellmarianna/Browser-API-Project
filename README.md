@@ -31,7 +31,7 @@ The pattern element defines a graphics object which can be redrawn at repeated x
                cx="150" cy="100" rx="125" ry="75" />
     </svg>
 
-###Feature 2
+### Feature 2
 Most of the time a pattern is filling a shape. To
 accomplish is in the SVG element with give the shape a style property fill
 that is referencing the pattern defined above.
@@ -52,6 +52,12 @@ that is referencing the pattern defined above.
         </defs>
         <circle cx="60" cy="60" r="60" style="stroke: #DA502A; stroke-width: 3px; fill:url(#myPattern);" />
     </svg>
+
+### Feature 3
+The is not only used to fill circular shapes, but
+other basic shapes as well such as a line, polygons, rectangles, and polylines.
+
+![SVG Pattern Element Feature 3](feature-3.png "Feature 3 Test")
 ----
 #### Attributes
 
@@ -62,6 +68,9 @@ graphs and diagrams. For instance, the Github daily commit tracker on a users pr
 uses the SVG pattern element.
 
 SVG allows you build up complex, layered patterns.
+
+Furthermore there is software that generates SVG patterns that you can
+download for free such as Hero Pattern and SVG Patterns Gallery.
 
 ## Browser Support
 The SVG pattern element has basic support from most browsers.
