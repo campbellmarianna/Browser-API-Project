@@ -38,6 +38,7 @@ ellipses based on a center coordinate, and both their x and y radius. The ellips
 #### Features
 1. [defs](https://developer.mozilla.org/en-US/docs/Web/SVG/Element/defs):
         - The `<defs>` element is used to store graphical objects that will be used at a later time.
+
         ```
         <defs>
           <pattern id="TrianglePattern"
@@ -50,30 +51,30 @@ ellipses based on a center coordinate, and both their x and y radius. The ellips
           </pattern>
         </defs>
         ```
-        
+
 2. [pattern](https://developer.mozilla.org/en-US/docs/Web/SVG/Element/pattern):
         - The `<pattern>` element is a fill type to use in SVG.
 
-    <pattern id="TrianglePattern"
-         patternUnits="userSpaceOnUse"
-             x="0" y="0" width="50" height="50"
-             viewBox="0 0 10 10" >
-      <path d="M 0 0 L 7 0 L 3.5 7 z"
-          fill="#fdcb6e"
-          stroke="#e84393" />
-    </pattern>
+        <pattern id="TrianglePattern"
+             patternUnits="userSpaceOnUse"
+                 x="0" y="0" width="50" height="50"
+                 viewBox="0 0 10 10" >
+          <path d="M 0 0 L 7 0 L 3.5 7 z"
+              fill="#fdcb6e"
+              stroke="#e84393" />
+        </pattern>
 
 3. [patternUnits](https://developer.mozilla.org/en-US/docs/Web/SVG/Attribute/patternUnits):
         - The `patternUnits` attribute indicates which coordinate system to use for the geometry properties of the <pattern> element.
 
-    <pattern id="TrianglePattern"
-         patternUnits="userSpaceOnUse"
-             x="0" y="0" width="50" height="50"
-             viewBox="0 0 10 10" >
-      <path d="M 0 0 L 7 0 L 3.5 7 z"
-          fill="#fdcb6e"
-          stroke="#e84393" />
-    </pattern>
+        <pattern id="TrianglePattern"
+             patternUnits="userSpaceOnUse"
+                 x="0" y="0" width="50" height="50"
+                 viewBox="0 0 10 10" >
+          <path d="M 0 0 L 7 0 L 3.5 7 z"
+              fill="#fdcb6e"
+              stroke="#e84393" />
+        </pattern>
 
 4. [x](https://developer.mozilla.org/en-US/docs/Web/SVG/Attribute/x):
         - The `x` attribute determines the x coordinate shift
