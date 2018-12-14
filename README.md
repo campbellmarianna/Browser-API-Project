@@ -37,7 +37,7 @@ ellipses based on a center coordinate, and both their x and y radius. The ellips
 ----
 #### Features
 1. [defs](https://developer.mozilla.org/en-US/docs/Web/SVG/Element/defs):
-        * The `<defs>` element is used to store graphical objects that will be used at a later time.
+    - The `<defs>` element is used to store graphical objects that will be used at a later time.
 
         <defs>
           <pattern id="TrianglePattern"
