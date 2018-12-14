@@ -179,7 +179,7 @@ The SVG pattern element has basic support from most browsers.
 However valuable pattern element attributes such `patternUnits`, `patternContentUnits`, and `patternTransform` are only supported by Safari.
 
 ## Opinions & Experiences
-I think this is a brilliant feature because in CSS a pattern can be made a background image. However, if a pattern is SVG, the pattern can be manipulated dynamically using JavaScript. The color of the pattern can be changed or the direction of a line can move in a different way. The SVG pattern element gives you many options for how you want the pattern to look. In the future, I think the pattern element will continue to be used for data visualization and to display graphics.
+I think this is a brilliant feature because in CSS a pattern can be made a background image. However, if a pattern is SVG, the pattern can be manipulated dynamically using JavaScript. The color of the pattern can be changed or the direction of a line can be moved in a different way. The SVG pattern element gives you many options for how you want the pattern to look. In the future, I think the pattern element will continue to be used for data visualization and to display graphics.
 
 ## How to run the demo
 ```sh
