@@ -36,22 +36,23 @@ ellipses based on a center coordinate, and both their x and y radius. The ellips
 
 ----
 #### Features
-1. [<defs>](https://developer.mozilla.org/en-US/docs/Web/SVG/Element/defs):
-    - The `<defs>` element is used to store graphical objects that will be used at a later time.
-
-    <defs>
-      <pattern id="TrianglePattern"
-           patternUnits="userSpaceOnUse"
-               x="0" y="0" width="50" height="50"
-               viewBox="0 0 10 10" >
-        <path d="M 0 0 L 7 0 L 3.5 7 z"
-            fill="#fdcb6e"
-            stroke="#e84393" />
-      </pattern>
-    </defs>
-
-2. [<pattern>](https://developer.mozilla.org/en-US/docs/Web/SVG/Element/pattern):
-    - The `<pattern>` element is a fill type to use in SVG.
+1. [defs](https://developer.mozilla.org/en-US/docs/Web/SVG/Element/defs):
+        - The `<defs>` element is used to store graphical objects that will be used at a later time.
+        ```
+        <defs>
+          <pattern id="TrianglePattern"
+               patternUnits="userSpaceOnUse"
+                   x="0" y="0" width="50" height="50"
+                   viewBox="0 0 10 10" >
+            <path d="M 0 0 L 7 0 L 3.5 7 z"
+                fill="#fdcb6e"
+                stroke="#e84393" />
+          </pattern>
+        </defs>
+        ```
+        
+2. [pattern](https://developer.mozilla.org/en-US/docs/Web/SVG/Element/pattern):
+        - The `<pattern>` element is a fill type to use in SVG.
 
     <pattern id="TrianglePattern"
          patternUnits="userSpaceOnUse"
@@ -63,7 +64,7 @@ ellipses based on a center coordinate, and both their x and y radius. The ellips
     </pattern>
 
 3. [patternUnits](https://developer.mozilla.org/en-US/docs/Web/SVG/Attribute/patternUnits):
-    - The `patternUnits` attribute indicates which coordinate system to use for the geometry properties of the <pattern> element.
+        - The `patternUnits` attribute indicates which coordinate system to use for the geometry properties of the <pattern> element.
 
     <pattern id="TrianglePattern"
          patternUnits="userSpaceOnUse"
@@ -75,9 +76,9 @@ ellipses based on a center coordinate, and both their x and y radius. The ellips
     </pattern>
 
 4. [x](https://developer.mozilla.org/en-US/docs/Web/SVG/Attribute/x):
-    - This attribute determines the x coordinate shift
-    of the pattern tile. This x attribute defines a x-axis
-    coordinate in the user coordinate system.
+        - The `x` attribute determines the x coordinate shift
+        of the pattern tile. This x attribute defines a x-axis
+        coordinate in the user coordinate system.
 
     <pattern id="TrianglePattern"
          patternUnits="userSpaceOnUse"
@@ -89,9 +90,9 @@ ellipses based on a center coordinate, and both their x and y radius. The ellips
     </pattern>
 
 5. [y](https://developer.mozilla.org/en-US/docs/Web/SVG/Attribute/y):
-    - This attribute determines the y coordinate shift
-    of the pattern tile. The y attribute defines a y-axis
-    coordinate in the user coordinate system.
+        - The `y` attribute determines the y coordinate shift
+        of the pattern tile. The y attribute defines a y-axis
+        coordinate in the user coordinate system.
 
     <pattern id="TrianglePattern"
          patternUnits="userSpaceOnUse"
@@ -102,8 +103,8 @@ ellipses based on a center coordinate, and both their x and y radius. The ellips
           stroke="#e84393" />
     </pattern>
 6. [width](https://developer.mozilla.org/en-US/docs/Web/SVG/Attribute/width):
-    - This attribute determines the width of the
-    pattern tile.
+        - The `width` attribute determines the width of the
+        pattern tile.
 
     <pattern id="TrianglePattern"
          patternUnits="userSpaceOnUse"
@@ -114,8 +115,8 @@ ellipses based on a center coordinate, and both their x and y radius. The ellips
           stroke="#e84393" />
     </pattern>
 7. [height](https://developer.mozilla.org/en-US/docs/Web/SVG/Attribute/width):
-    - This attribute determines the height of the
-    pattern tile.
+        - The `height` attribute determines the height of the
+        pattern tile.
 
     <pattern id="TrianglePattern"
          patternUnits="userSpaceOnUse"
@@ -126,10 +127,10 @@ ellipses based on a center coordinate, and both their x and y radius. The ellips
           stroke="#e84393" />
     </pattern>
 8. [viewBox](https://developer.mozilla.org/en-US/docs/Web/SVG/Attribute/viewBox):
-    - This attribute defines the bound of the SVG
-     viewport for the pattern fragment. The viewBox Attribute
-     defines the position and dimension, in user space, of
-     an SVG viewport.
+        - The `viewBox` attribute defines the bound of the SVG
+        viewport for the pattern fragment. The viewBox Attribute
+        defines the position and dimension, in user space, of
+        an SVG viewport.
 
      <pattern id="TrianglePattern"
           patternUnits="userSpaceOnUse"
@@ -140,11 +141,11 @@ ellipses based on a center coordinate, and both their x and y radius. The ellips
            stroke="#e84393" />
      </pattern>
 
-9. [`<path>`](https://developer.mozilla.org/en-US/docs/Web/SVG/Tutorial/Paths):
-    - The `<path>` element is the most powerful element in
-    the SVG library of basic shapes. You can use it to create
-    lines, curves, arcs and more. Paths create complex shapes
-    by combining multiple straight lines or curved lines.
+9. [path](https://developer.mozilla.org/en-US/docs/Web/SVG/Tutorial/Paths):
+        - The `<path>` element is the most powerful element in
+        the SVG library of basic shapes. You can use it to create
+        lines, curves, arcs and more. Paths create complex shapes
+        by combining multiple straight lines or curved lines.
 
     <pattern id="TrianglePattern"
          patternUnits="userSpaceOnUse"
@@ -156,7 +157,7 @@ ellipses based on a center coordinate, and both their x and y radius. The ellips
     </pattern>
 
 10. [d](https://developer.mozilla.org/en-US/docs/Web/SVG/Attribute/d):
-    - The `d` attribute defines the shape of the path element. The d attribute contains a series of commands and parameters used by those commands. Each of commands is instantiated (for example, creating a class, naming and locating it) by a specific letter. For instance, let's move to the x and y coordinates (10, 10). The "Move to" command is called with the letter M. When the parser runs into this letter, it knows you want to move to a point.
+        - The `d` attribute defines the shape of the path element. The d attribute contains a series of commands and parameters used by those commands. Each of commands is instantiated (for example, creating a class, naming and locating it) by a specific letter. For instance, let's move to the x and y coordinates (10, 10). The "Move to" command is called with the letter M. When the parser runs into this letter, it knows you want to move to a point.
 
     <pattern id="TrianglePattern"
          patternUnits="userSpaceOnUse"
@@ -168,7 +169,7 @@ ellipses based on a center coordinate, and both their x and y radius. The ellips
     </pattern>
 
 11. [fill](https://developer.mozilla.org/en-US/docs/Web/SVG/Tutorial/Fills_and_Strokes):
-    - The `fill` attribute sets the color inside the object
+        - The `fill` attribute sets the color inside the object
 
     <pattern id="TrianglePattern"
          patternUnits="userSpaceOnUse"
@@ -179,11 +180,11 @@ ellipses based on a center coordinate, and both their x and y radius. The ellips
           stroke="#e84393" />
     </pattern>
 12. [stroke](https://developer.mozilla.org/en-US/docs/Web/SVG/Tutorial/Fills_and_Strokes)
-    - The `stroke` sets the color of the line drawn
-    around the object. You can also specify the opacity
-    of either the fill or stroke separately in SVG. These
-    are controlled by the fill-opacity and stroke-opacity
-    attributes.
+        - The `stroke` sets the color of the line drawn
+        around the object. You can also specify the opacity
+        of either the fill or stroke separately in SVG. These
+        are controlled by the fill-opacity and stroke-opacity
+        attributes.
 
     <pattern id="TrianglePattern"
          patternUnits="userSpaceOnUse"
