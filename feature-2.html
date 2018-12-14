@@ -1,0 +1,25 @@
+<html>
+    <head>
+    </head>
+    <body>
+    <!-- Feature 2 Description: Most of the time a pattern is filling a shape. To
+    accomplish is in the SVG element with give the shape a style property fill
+    that is referencing the pattern defined above. -->
+    <svg
+        viewBox="0 0 300 200">
+        <defs>
+            <pattern id="myPattern"
+                     x="10" y="10" width="20" height="20"
+                     patternUnits="userSpaceOnUse">
+                     <!--start pattern-->
+                     <circle cx="10" cy="10" r="7" style="stroke: none;
+                     fill: #307476"/>
+                    <!-- end pattern -->
+            </pattern>
+        </defs>
+        <circle cx="60" cy="60" r="60" style="stroke: #DA502A; stroke-width: 3px; fill:url(#myPattern);" />
+    </svg>
+    </body>
+</html>
+<!-- Pattern Color Palette: https://coolors.co/fc766a-e7b8a6-307476-575351-da502a-->
+<!-- SVG allows you build up complex, layered patterns. -->

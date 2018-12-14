@@ -6,8 +6,10 @@
     <style>
     body {
         background-color: #6c5ce7;
+        font-family: Helvetica;
+
     }
-    .feature-1 {
+    .feature-display {
         width: 300px;
         height: 200px;
         display: block;
@@ -20,12 +22,6 @@
         /* background-color: white; */
     }
 
-    .display-container {
-        background-color: white;
-        width: 100%;
-        height: 200px;
-
-    }
     </style>
 </head>
 <body>
@@ -34,41 +30,64 @@
     <!-- Description about SVG-->
     <p>Scalable Vector Graphic (SVGs) can be used for web development and data
         visualization. It is mainly used to create vector based images. SVG draws
-        lines at different coordinates on the screen to create the image.
+        lines at different coordinates on the screen to create a image.
         A powerful SVG element is pattern!</p>
 
     <!--Feature 1 description-->
     <p>The pattern element defines a graphics object which can be redrawn at
         repeatedx and y coordinate intervals ("tiled") to cover an area.</p>
-    <!--Image of Tested Feature (only for README.md)-->
-    <div class="display-container">
-        <div class="feature-1">
-            <svg xmlns="http://www.w3.org/2000/svg"
-                 version="1.1"
-                 viewBox="0 0 300 200" >
+    <!--Image of Tested Feature-->
+    <div class="feature-display">
+        <svg xmlns="http://www.w3.org/2000/svg"
+             version="1.1"
+             viewBox="0 0 300 200" >
 
-              <title>Example pattern01</title>
-              <desc>Fill an ellipse using a pattern paint server.</desc>
+          <title>Example pattern01</title>
+          <desc>Fill an ellipse using a pattern paint server.</desc>
 
-              <defs>
-                <pattern id="TrianglePattern"
-            	     patternUnits="userSpaceOnUse"
-                         x="0" y="0" width="50" height="50"
-                         viewBox="0 0 10 10" >
-                  <path d="M 0 0 L 7 0 L 3.5 7 z"
-                      fill="#fdcb6e"
-                      stroke="#e84393" />
-                </pattern>
-              </defs>
+          <defs>
+            <pattern id="TrianglePattern"
+        	     patternUnits="userSpaceOnUse"
+                     x="0" y="0" width="50" height="50"
+                     viewBox="0 0 10 10" >
+              <path d="M 0 0 L 7 0 L 3.5 7 z"
+                  fill="#fdcb6e"
+                  stroke="#e84393" />
+            </pattern>
+          </defs>
 
-              <!-- The ellipse is filled using a triangle pattern paint server -->
-              <ellipse fill="url(#TrianglePattern)"
-            	   stroke="black"
-            	   stroke-width="2"
-                       cx="150" cy="100" rx="125" ry="75" />
-            </svg>
-        </div>
+          <!-- The ellipse is filled using a triangle pattern paint server -->
+          <ellipse fill="url(#TrianglePattern)"
+        	   stroke="black"
+        	   stroke-width="2"
+                   cx="150" cy="100" rx="125" ry="75" />
+        </svg>
     </div>
-    <!--Code Snippet-->
+    <!--Feature 1 Code Snippet (only for README.md)-->
+
+    <!-- Feature 2 description -->
+    <p>Most of the time a pattern is filling a shape. To
+    accomplish is in the SVG element with give the shape a style property fill
+    that is referencing the pattern defined above.</p>
+
+    <!--Image of Tested Feature -->
+    <div class="feature-display">
+        <svg xmlns="http://www.w3.org/2000/svg"
+             version="1.1"
+             viewBox="0 0 300 200">
+            <defs>
+                <pattern id="myPattern"
+                         x="10" y="10" width="20" height="20"
+                         patternUnits="userSpaceOnUse">
+                         <!--start pattern-->
+                         <circle cx="10" cy="10" r="7" style="stroke: none;
+                         fill: #307476"/>
+                        <!-- end pattern -->
+                </pattern>
+            </defs>
+            <circle cx="60" cy="60" r="60" style="stroke: #DA502A; stroke-width: 3px; fill:url(#myPattern);" />
+        </svg>
+    </div>
+    <!--Feature 2 Code Snippet (only for README.md)-->
 </body>
 </html>
