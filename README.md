@@ -140,7 +140,7 @@ ellipses based on a center coordinate, and both their x and y radius. The ellips
            stroke="#e84393" />
      </pattern>
 
-9. [<path>](https://developer.mozilla.org/en-US/docs/Web/SVG/Tutorial/Paths):
+9. [`<path>`](https://developer.mozilla.org/en-US/docs/Web/SVG/Tutorial/Paths):
     - The `<path>` element is the most powerful element in
     the SVG library of basic shapes. You can use it to create
     lines, curves, arcs and more. Paths create complex shapes
