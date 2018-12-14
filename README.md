@@ -34,8 +34,8 @@ The pattern element defines a graphics object which can be redrawn at repeated x
 The `<ellipse>` element is an SVG basic shape, used to create
 ellipses based on a center coordinate, and both their x and y radius. The ellipse is filled using a triangle pattern paint server.
 
-----
-#### Features
+
+### Features
 1. [defs](https://developer.mozilla.org/en-US/docs/Web/SVG/Element/defs):
     - The `<defs>` element is used to store graphical objects that will be used at a later time.
 
@@ -103,14 +103,15 @@ ellipses based on a center coordinate, and both their x and y radius. The ellips
 11. [fill](https://developer.mozilla.org/en-US/docs/Web/SVG/Tutorial/Fills_and_Strokes):
     - The `fill` attribute sets the color inside the object.
 
-12. [stroke](https://developer.mozilla.org/en-US/docs/Web/SVG/Tutorial/Fills_and_Strokes)
+12. [stroke](https://developer.mozilla.org/en-US/docs/Web/SVG/Tutorial/Fills_and_Strokes):
     - The `stroke` sets the color of the line drawn
     around the object. You can also specify the opacity
     of either the fill or stroke separately in SVG. These
     are controlled by the fill-opacity and stroke-opacity
     attributes.
 
-
+## Other Examples
+-----
 ### Example 2
 Most of the time a pattern is filling a shape. To
 accomplish is in the SVG element with give the shape a style property fill
@@ -158,7 +159,7 @@ uses the SVG pattern element.
 
 SVG allows you build up complex, layered patterns.
 
-Furthermore there is software that generates SVG patterns and that you can use and get the code from such as  [Hero Pattern](http://www.heropatterns.com/) and [SVG Patterns Gallery](https://philiprogers.com/svgpatterns/).
+Furthermore there is software that generates SVG patterns that you can use and get the code from such as  [Hero Pattern](http://www.heropatterns.com/) and [SVG Patterns Gallery](https://philiprogers.com/svgpatterns/).
 
 ## Browser Support
 The SVG pattern element has basic support from most browsers.
@@ -176,6 +177,19 @@ The SVG pattern element has basic support from most browsers.
 - Safari iOS
 
 However valuable pattern element attributes such `patternUnits`, `patternContentUnits`, and `patternTransform` are only supported by Safari.
+
+## Opinions & Experiences
+I think this is a brilliant feature because in CSS a pattern can be made a background image. However, if a pattern is SVG, the pattern can be manipulated dynamically using JavaScript. The color of the pattern can be changed or the direction of a line can move in a different way. The SVG pattern element gives you many options for how you want the pattern to look. In the future, I think the pattern element will continue to be used for data visualization and to display graphics.
+
+## How to run the demo
+```sh
+git clone https://github.com/campbellmarianna/Browser-API-Project.git
+cd Browser-API-Project
+open feature-1.html
+open feature-2.html
+open feature-3.html
+```
+
 
 ## Documentation
 - https://developer.mozilla.org/en-US/docs/Web/SVG/Tutorial/Patterns
